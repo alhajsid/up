@@ -5,6 +5,11 @@ var fs = require('fs');
 const express = require('express')
 const app = express()
 
+app.get('/alhaj/devil', function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello alhaj')
+})
+
 app.get('/alhaj', function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('Hello alhaj')
